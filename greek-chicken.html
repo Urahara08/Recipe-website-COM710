@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="recipe-card.css">
+    <title>Greek Chicken</title>
+</head>
+<body>
+    <header>
+        <nav class="nav-bar">
+            <div class="nav-div">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" height="48px" viewBox="0 -960 960 960" width="48px" fill="#F3F3F3"><path d="M370-409h60v-183h-60v183Zm-160-50q-49-24-79.5-69T100-627q0-72.49 50.5-122.74Q201-800 273.41-800q11.59 0 23.08 1.71 11.48 1.72 22.51 4.29l8 2 4-7q23-40 63-60.5t86-20.5q46 0 86 20.5t63 60.5l4 7 8-2q11-3 22.46-4.5 11.47-1.5 23.89-1.5 71.65 0 122.15 50.26Q860-699.49 860-627q0 54-30.5 99T750-459v215H210v-215Zm320 50h60v-183h-60v183ZM270-305h420v-191l40-20q32-16 52-45.5t20-64.5q0-48-36-80t-85-32q-9 0-18 1.5t-18 3.5l-39 11-28-46q-16-26-41.98-39-25.98-13-56-13T424-807q-26 13-42 39l-28 46-40-11q-9-2-17.84-3.5-8.85-1.5-18.16-1.5-49 0-84.5 32.5T158-625q0 35 20 65t52 45l40 19v191Zm-60 61h60v104h420v-104h60v164H210v-164Zm270-61Z"/></svg>
+                </div>
+                <ul class="nav-list">
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="chinese.html">Chinese</a></li>
+                    <li><a href="japanese.html">Japanese</a></li>
+                    <li><a href="indian.html">Indian</a></li>
+                    <li><a href="greek.html">Greek</a></li>
+                    <li><a href="italian.html">Italian</a></li>
+                </ul>
+                <button class="account-btn" onclick="location.href='login.html'">Login</button>
+                <button class="account-btn" onclick="location.href='signup.html'">Sign-up</button>
+            </div>
+        </nav>
+    </header> 
+    <section class="hero" style="background-image: url('images/greek\ chicken.jpg'); background-position: center; background-size: cover; height: 400px;">
+        <div class="hero-content">
+            <h1>Greek Chicken</h1>
+        </div>
+    </section>
+    <section class="info">
+        <div class="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li>4 boneless, skinless chicken breasts</li>
+                <li>1/4 cup olive oil</li>
+                <li>3 tablespoons lemon juice</li>
+                <li>3 cloves garlic, minced</li>
+                <li>1 tablespoon dried oregano</li>
+                <li>1 teaspoon dried thyme</li>
+                <li>Salt and pepper to taste</li>
+                <li>1/2 cup crumbled feta cheese</li>
+                <li>1/4 cup Kalamata olives, pitted and sliced</li>
+                <li>1/4 cup chopped fresh parsley</li>
+                <li>Lemon wedges (for serving)</li>
+            </ul>
+            <p>Time: 15 mins</p>
+            <p>Serves: 2</p>
+        </div>
+        <div class="steps">
+            <h2>Steps</h2>
+            <ol>
+                <li>In a large bowl, whisk together the olive oil, lemon juice, garlic, oregano, thyme, salt, and pepper.</li>
+                <li>Add the chicken breasts to the bowl and toss to coat them in the marinade. Let them marinate for at least 15 minutes.</li>
+                <li>Preheat a grill or grill pan over medium-high heat.</li>
+                <li>Grill the chicken breasts for 6-8 minutes per side, or until they are cooked through and have nice grill marks.</li>
+                <li>Remove the chicken from the grill and let it rest for a few minutes.</li>
+                <li>Sprinkle the crumbled feta cheese, Kalamata olives, and chopped fresh parsley over the top of the chicken.</li>
+                <li>Serve the Greek chicken with lemon wedges on the side.</li>
+            </ol>
+        </div>
+    </section>
+    <!-- Comment box -->
+ <section class="comment-section">
+    <div class="container">
+        <h2>Leave a comment!</h2>
+        <form>
+           <textarea id="" placeholder="Add Your Comment" value=" "></textarea>
+           <div class="btn">
+               <input id="submit" type="submit" value="Comment">
+               <button id="clear">Delete</button>
+           </div> 
+        </form>
+    </div>
+    <div class="comments">
+       <h2>Comments:</h2>
+        <div id="comment-box">
+        </div>
+    </div>
+</section>
+   <script src="comment.js"></script>
+</body>
+</body>
+<footer class="footer">
+    <p>Developed by Thomas Andrews</p>
+</footer>
+</html>
+</html>

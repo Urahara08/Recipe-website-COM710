@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-up</title>
+    <link rel="stylesheet" href="sign-up.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h1>Sign-up</h1>
+        <p id="error-message"></p>
+        <form action="http://localhost:3000/signup" method="POST">
+            <input required type="text" name="firstname" placeholder="Firstname">
+            <input required type="email" name="email" placeholder="Email">
+            <input required type="password" name="password" placeholder="Password">
+            <button type="submit">Sign-up</button>
+        </form>
+        <p><a href="login.html">Already have an account?</a></p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,361 @@
+:root{
+    --base-color: rgb(4, 0, 0);
+    --second-color: white;
+    --text-color: white;
+}
+
+.darkmode{
+    --base-color: white;
+    --text-color: black;
+    --second-color: black;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: var(--second-color);
+}
+
+/* Navigation bar */
+
+header {
+    width: 100%;
+    background-color: var(--base-color); /* Set the background color to black */
+    color: var(--second-color);
+    padding: 10px 0;
+    position: fixed;
+    top: 0;
+    z-index: 1000;
+}
+
+.nav-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.nav-div {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between; /* Ensure space between logo and nav list */
+}
+
+.logo {
+    margin: 5px 0;
+    font-size: 20px;
+    margin-left: 70px; /* Move the logo further to the right */
+    display: flex;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: center; /* Center the nav items */
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    flex: 1;
+}
+
+.nav-list li {
+    transition: transform 0.5s; /* Add a smooth transition effect */
+    margin: 0 85px; /* Bring the nav items closer together */
+    display: inline;
+    justify-content: center;
+}
+
+.nav-list li:hover {
+    transform: scale(1.1); /* Scale the nav items on hover */
+}
+
+.nav-list a {
+    color: var(--second-color);
+    text-decoration: none;
+    font-size: 18px;
+    justify-content: center;
+    transition: color 0.5s; /* Add a smooth transition effect for color */
+}
+
+.nav-list a:hover {
+    color: blue; /* Change color to blue on hover */
+}
+
+.account-btn {
+    background-color: var(--second-color);
+    color: var(--base-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-right: 20px; /* Move the button to the far right */
+    border-radius: 5px;
+    transition: transform 0.5s; /* Add a smooth transition effect */
+}
+
+.account-btn a{
+    text-decoration: none;
+    color: var(--base-color);
+}
+
+.account-btn:hover {
+    transform: scale(1.1); /* Scale the button on hover */
+    background-color: rgb(138, 138, 241);
+    color: var(--second-color);
+}
+
+/* theme-switch */
+
+#theme-switch{
+    height: 50px;
+    width: 50px;
+    padding: 0;
+    border-radius: 50%;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#theme-switch svg{
+    fill: black;
+}
+
+#theme-switch svg:last-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:first-child{
+    display: none;
+}
+
+.darkmode #theme-switch svg:last-child{
+    display: block;
+}
+
+/* Hero */
+
+.hero {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 400px; /* Adjust height as needed */
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero h1 {
+    color: var(--second-color);
+    font-size: 48px; /* Adjust font size as needed */
+    text-align: center;
+}
+
+.search-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.search-box input[type="text"] {
+    width: 400px; /* Adjust width as needed */
+    height: 40px; /* Adjust height as needed */
+    padding: 10px;
+    font-size: 18px; /* Adjust font size as needed */
+    border: none;
+    border-radius: 5px 0 0 5px;
+}
+
+.search-box button {
+    height: 40px; /* Adjust height as needed */
+    padding: 10px 20px;
+    font-size: 18px; /* Adjust font size as needed */
+    border: none;
+    border-left: none;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--base-color);
+    color: var(--second-color);
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: var(--base-color);
+    color: var(--second-color);
+}
+
+
+/* recipe section */
+.recipes{
+    padding: 12px 0;
+    margin: auto;
+    background: var(--second-color);
+    height: auto;
+}
+
+.recipes h1{
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 28px;
+    color: var(--base-color);
+    
+}
+
+.recipe-section{
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-items: center;   
+    }
+
+.recipe-card{
+    background: var(--second-color);
+    margin: 15px 10px;
+    border-radius: 7px;
+    border: 1px solid rgb(253, 252, 252);
+    overflow: hidden;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+}
+
+.recipe-card a{
+    text-decoration: none;
+    color: var(--second-color);
+}
+
+.recipe-card img{
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 5px 5px 0 0;
+    transition: transform 0.2s;
+}
+
+/* .recipe-button {
+    text-align: center;
+    padding: 10px;
+    margin-top: 10px; 
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+} */
+
+.recipe-card button{
+   padding: 10px 10px;
+   margin-top: 7px;
+   width: 100%;
+   background-color: var(--base-color);
+   color: var(--second-color);
+   cursor: pointer;
+   border: none;
+   transition: transform 0.2s;
+}
+
+.recipe-card button:hover{
+    transform: scale(1.1);
+}
+
+.recipe-card button:hover + img{
+    transform: scale(1.1);
+}
+
+/* recipe of the week */
+.recipe-of-the-week {
+    width: 100%;
+    height: 400px;
+    margin: 10px 0;
+    padding: px 0; /* Optional: Add padding for spacing */
+    background-color: var(--second-color); /* Optional: Add background color */
+}
+
+.recipe-of-the-week h1{
+    text-align: center;
+    margin-bottom: 45px;
+    font-size: 30px;
+    color:var(--base-color);
+    text-decoration: underline;
+    
+}
+
+/* footer */
+
+footer {
+    
+    /* background-image: url(images/Greece.jpg);background-repeat: no-repeat; */
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 20px 0; /* Increase padding for more space */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    height: 200px; /* Increase height for a larger footer */
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+}
+
+footer p {
+    font-size: 1rem;
+    margin: 0; /* Remove default margin */
+    color: rgb(251, 248, 248);
+    font-size: medium;
+}
+
+/* Media Queries */
+
+@media only screen and (min-width: 1200px){
+  .menu-icon{
+      display: none;
+  }
+
+  .nav-list{
+      display: block;
+  }
+}
+
+@media only screen and (max-width: 1200px){
+    .container{
+        flex-direction: column;
+    }
+
+    .hero h1{
+        font-size: 50px;
+    }
+
+    .nav-list{
+        display: none;
+    }
+
+    .nav-list.active{
+        display: block;
+    }
+
+    nav ul{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    nav ul li{
+        text-align: center;
+        margin: 10px 0;
+    }
+}
