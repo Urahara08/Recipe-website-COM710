@@ -195,19 +195,19 @@ body {
 
 @keyframes rotateBackground {
     0% {
-        background-image: url('images/chinese street.jpg');
+        background-image: url('chinese street.jpg');
     }
     25% {
-        background-image: url('images/Greece.jpg');
+        background-image: url('Greece.jpg');
     }
     50% {
-        background-image: url('images/indian street.jpg');
+        background-image: url('indian street.jpg');
     }
     75% {
-        background-image: url('images/Italian banner.jpg');
+        background-image: url('Italian banner.jpg');
     }
     100% {
-        background-image: url('images/japanstreet.jpg');
+        background-image: url('japanstreet.jpg');
     }
 }
 
